@@ -2,6 +2,10 @@
 
 ## Description
 
+VoxPopStore makes it easy to setup a very simple web shop. Once created users can make an order. There is no payment, no checkout, no shipping.
+
+The source code is released under the [MIT License](./LICENSE).
+
 ## Table of content
 - [Setup Process](#setup-process)
 - [Contribute](#contribute)
