@@ -1,0 +1,29 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /QR/{qr} {
+      allow read: if true;
+      allow write: if false;
+    }
+    match /StoreOwners/{userId}/allStores/{store} {
+      allow read: if true;
+      allow delete: if false;
+      allow create, update: if request.auth != null && request.auth.uid == userId;
+    }
+    // allow read only if request data matches the customer's email
+    match /StoreOwners/{userId}/allStores/{store}/customers/{customer} {
+      // allow read for non logged in user when query's email matches the customer's email
+      allow read: if true;
+      allow delete: if false;
+      allow create: if request.resource.data.email != null && request.resource.data.phone != null;
+    }
+    match /StoreOwners/{userId}/allStores/{store}/Orders/{order} {
+      allow read: if true;
+      allow delete: if false;
+      allow write: if request.resource.data.email != null
+      							&& request.resource.data.phone != null
+                    && request.resource.data.order != null
+                    && request.resource.data.storeId == store;
+    }
+  }
+}
