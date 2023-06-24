@@ -1,0 +1,19 @@
+.popstore-wrapper{
+    padding-top: 30px;
+
+}
+
+.logout-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pop-header-wrapper{
+    align-items: center;
+}
+
+.new-popstore-button{
+    margin-bottom: 20px;
+}
