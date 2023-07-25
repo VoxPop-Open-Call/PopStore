@@ -1,25 +1,26 @@
-# VoxPopStore
+# PopStore
 
 ## Description
 
-VoxPopStore makes it easy to setup a very simple web shop. Once created users can make an order. There is no payment, no checkout, no shipping.
+[PopStore](https://pt.popsto.re/) makes it easy to setup a very simple web shop. Once created users can make an order. There is no payment, no checkout, no shipping.
 
 The source code is released under the [MIT License](./LICENSE).
 
 ## Table of content
+
 - [Setup Process](#setup-process)
 - [Contribute](#contribute)
 
 ## Setup Process
 
-### Step-1: Clone GitLab repo for this project locally
+### Step-1: Clone GitHub repo for this project locally
 
-You can clone repo locally by git or by downloading the zip file from the GitLab.
+You can clone repo locally by git or by downloading the zip file from the GitHub.
 
 **Note:** Make sure you have git installed locally on your computer first. After that run this command.
 
 ```sh
-git clone https://gitlab.com/voxpopstore/voxpopstore.git
+git clone https://github.com/VoxPop-Open-Call/PopStore.git
 ```
 
 ### Step-2: CD into the project
